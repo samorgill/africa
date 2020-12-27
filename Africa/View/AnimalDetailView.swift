@@ -60,7 +60,6 @@ struct AnimalDetailView: View {
                 
               
                 // DESCRIPTION
-                
                 Group {
                     HeadingView(headingImage: "info.circle", headingText: "All about \(animal.name)")
                     Text(animal.description)
@@ -71,8 +70,18 @@ struct AnimalDetailView: View {
                 
                 
                 // MAP
+                Group {
+                    HeadingView(headingImage: "map", headingText: "National Parks")
+                    InsetMapView()
+                }
+                .padding(.horizontal)
                 
                 // LINK
+                Group {
+                    HeadingView(headingImage: "books.vertical", headingText: "Learn more")
+                    ExternalWeblinkView(animal: animal)
+                }
+                .padding()
                 
             } //: VSTACK
             .navigationBarTitle("Learn about \(animal.name)",
