@@ -31,18 +31,23 @@ struct MapView: View {
         Map(coordinateRegion: $region, annotationItems: locations, annotationContent: {
             item in
             // (A) PIN: OLD STYLE(always static)
-            //            MapPin(coordinate: item.location, tint: .accentColor)
+            // MapPin(coordinate: item.location, tint: .accentColor)
             
             // (B) MARKER: NEW STYLE(always static)
-            //            MapMarker(coordinate: item.location, tint: .accentColor)
+            // MapMarker(coordinate: item.location, tint: .accentColor)
             
             // (C) CUSTOM BASIC ANNOTATION (ir could be interactive
+            //            MapAnnotation(coordinate: item.location) {
+            //                Image(item.image)
+            //                    .resizable()
+            //                    .scaledToFit()
+            //                    .frame(width: 32, height: 32, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+            //            } //: ANNOTATION
+            
+            // (D) COMPLEX MAP ANNOTATION (it could be interactive)
             MapAnnotation(coordinate: item.location) {
-                Image("logo")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 32, height: 32, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-            } //: ANNOTATION
+                MapAnnotationView(location: item)
+            }
         })
     }
 }
