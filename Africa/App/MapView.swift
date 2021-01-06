@@ -48,7 +48,51 @@ struct MapView: View {
             MapAnnotation(coordinate: item.location) {
                 MapAnnotationView(location: item)
             }
-        })
+        }) //: MAP
+        
+        .overlay(
+            HStack(alignment: .center, spacing: 12) {
+                Image("compass")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 48, height: 48)
+                
+                VStack(alignment: .leading, spacing: 3, content: {
+                    HStack {
+                        Text("Latitiude: ")
+                            .font(.footnote)
+                            .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                            .foregroundColor(.accentColor)
+                        Spacer()
+                        Text("\(region.center.latitude)")
+                            .font(.footnote)
+                            .foregroundColor(.white)
+                    }
+                    Divider()
+                    HStack {
+                        Text("Longitude: ")
+                            .font(.footnote)
+                            .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                            .foregroundColor(.accentColor)
+                        Spacer()
+                        Text("\(region.center.longitude)")
+                            .font(.footnote)
+                            .foregroundColor(.white)
+                    }
+                })
+            } //: HSTACK
+            .padding(.vertical, 12)
+            .padding(.horizontal, 16)
+            .background(
+                Color.black
+                    .cornerRadius(8)
+                    .opacity(0.6)
+                
+            )
+            .padding()
+            , alignment: .top
+            
+        )
     }
 }
 
