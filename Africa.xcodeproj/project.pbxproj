@@ -46,6 +46,7 @@
 		694E70DA2598EEEA0035EBFF /* InsetFactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694E70D92598EEEA0035EBFF /* InsetFactView.swift */; };
 		694E70DD2598F0910035EBFF /* InsetMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694E70DC2598F0910035EBFF /* InsetMapView.swift */; };
 		694E70E02598F3860035EBFF /* ExternalWeblinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694E70DF2598F3860035EBFF /* ExternalWeblinkView.swift */; };
+		69A3CEA725BDCC61007FBF80 /* AnimalGridItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A3CEA625BDCC61007FBF80 /* AnimalGridItemView.swift */; };
 		69E5EC1D25A8FAB900DBA690 /* MotionAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E5EC1C25A8FAB900DBA690 /* MotionAnimationView.swift */; };
 /* End PBXBuildFile section */
 
@@ -91,6 +92,7 @@
 		694E70D92598EEEA0035EBFF /* InsetFactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetFactView.swift; sourceTree = "<group>"; };
 		694E70DC2598F0910035EBFF /* InsetMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetMapView.swift; sourceTree = "<group>"; };
 		694E70DF2598F3860035EBFF /* ExternalWeblinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExternalWeblinkView.swift; sourceTree = "<group>"; };
+		69A3CEA625BDCC61007FBF80 /* AnimalGridItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalGridItemView.swift; sourceTree = "<group>"; };
 		69E5EC1C25A8FAB900DBA690 /* MotionAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionAnimationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -210,6 +212,7 @@
 				691D2FD525A646870014C3A7 /* VideoPlayerView.swift */,
 				691D2FE025A6563E0014C3A7 /* MapAnnotationView.swift */,
 				69E5EC1C25A8FAB900DBA690 /* MotionAnimationView.swift */,
+				69A3CEA625BDCC61007FBF80 /* AnimalGridItemView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -334,6 +337,7 @@
 				691DD12325A3A73200BAA393 /* VideoModel.swift in Sources */,
 				69202D9D2597553A006595EA /* VideoListView.swift in Sources */,
 				691D2FDE25A6503F0014C3A7 /* LocationModel.swift in Sources */,
+				69A3CEA725BDCC61007FBF80 /* AnimalGridItemView.swift in Sources */,
 				694E70D22598E8C00035EBFF /* InsetGalleryView.swift in Sources */,
 				691DD12625A3A79B00BAA393 /* VideoListItemView.swift in Sources */,
 				69202DBD25978CB0006595EA /* CodableBundleExtension.swift in Sources */,
